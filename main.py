@@ -29,7 +29,7 @@ def drawBorder():
 #oled.invert(True)
 
 while True:
-    angle = (pot.read_u16())/20800 # 65535 / 3,1415 ~= 28600    like map() function in C++
+    angle = (pot.read_u16())/20800 # 65535 / 3,1415 ~= 20861    like map() function in C++
     value = int(angle * 31.831927) # 100 / 3,1415 ~= 31.831927  0 - 100 % show value
     x = int(32 * cos(angle))
     y = int(32 * sin(angle))
